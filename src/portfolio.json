@@ -1,0 +1,64 @@
+{
+  "unpopulated": { "name": "Anirudh Kumar" },
+  "about": {
+    "descriptions": [
+      "I am Anirudh Kumar. I am currently working as a Software Engineer at Xoriant Solutions specialized in JavaScript Applications. I did myundergrad in CS from DIT.",
+      "I am a developer, geek and curious human besides being an OpenSource enthusiast. I have experience of delivering solutions for interesting problems from startup and industry space.",
+      "I love to cook and travel."
+    ]
+  },
+  "skills": ["React", "Javascript", "Git", "Node js", "Golang"],
+  "educations": [
+    {
+      "institute": "Dream institute of Technology",
+      "degree": "B.Tech",
+      "time": "2016 - 2020",
+      "major": "Computer Science & Engineering",
+      "descriptions": [
+        "Secured overall CGPA of 8.81/10.0.",
+        "Attended Nasa Space App Program organized by Think Again Lab."
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Software Engineer",
+      "company": "Xoriant Solutions Pvt Ltd",
+      "time": "Aug 2020 - Present",
+      "descriptions": [
+        "Build Micro-frontends in react, which can be used in other SPA apps, used in several projects.",
+        "Build UI components of Blueprint Design System which is used by other applications. Also, wrote test cases and improved the code coverage from 65 to 95%.",
+        "Worked on Storybook appliaction to display features and working of MFEs and UI Components.",
+        "Used react UI libraries for designing and build components for SPAs for different user roles and token based authetication."
+      ]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "Think Again Lab",
+      "time": "Jun - Aug 2020",
+      "descriptions": [
+        "Build SPA from pre-built UI components keeping the theme uniform through out the project.",
+        "Transformed web page application into SPA"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Chat Pat",
+      "time": "2021",
+      "descriptions": [
+        "Chat application which can be send text message and images to other users.",
+        " Built using react, redux, nodejs, socket.io. Used AWS S3 and image storage and MongoDB as text storage."
+      ],
+      "skills": ["React", "Node js", "MongoDb"]
+    },
+    {
+      "title": "Dev Portfolio",
+      "time": "2022",
+      "descriptions": [
+        "Created React Portifolio generator from JSON with specific, and custom components"
+      ],
+      "skills": ["React", "CSS", "Github Actions"]
+    }
+  ]
+}
