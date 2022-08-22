@@ -61,6 +61,15 @@
         "Created React Portifolio generator from JSON with specific, and custom components"
       ],
       "skills": ["React", "CSS", "Github Actions"]
+    },
+    {
+      "title": "Dev Portfolio",
+      "link": "https://github.com/AnirudhKumar10/anirudhkumar.github.io",
+      "time": "2022",
+      "descriptions": [
+        "Created React Portifolio generator from JSON with specific, and custom components"
+      ],
+      "skills": ["React", "CSS", "Github Actions"]
     }
   ]
 }
