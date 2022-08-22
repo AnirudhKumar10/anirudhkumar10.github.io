@@ -1,44 +1,45 @@
-import { ChangeEventHandler, useState } from "react";
-
-const intialState = { name: "", mobile: "", email: "" };
+import { useForm } from "@formspree/react";
 
 export const Contact: React.FC = () => {
-  const [state, setState] = useState(intialState);
-
-  const changeHandler: ChangeEventHandler<HTMLInputElement> = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value });
-  };
+  const [state, handleSubmit] = useForm("xnqrnqep");
 
   return (
     <div className="contact">
-      <div>
-        <label htmlFor="name"></label>
-        <input
-          name="name"
-          placeholder="Enter your name"
-          value={state.name}
-          onChange={changeHandler}
-        />
-      </div>
-      <div>
-        <label htmlFor="mobile"></label>
-        <input
-          name="mobile"
-          placeholder="Enter your mobile"
-          value={state.mobile}
-          onChange={changeHandler}
-        />
-      </div>
-      <div>
-        <label htmlFor="email"></label>
-        <input
-          name="email"
-          placeholder="Enter your email"
-          value={state.email}
-          onChange={changeHandler}
-        />
-      </div>
-      <button>Submit</button>
+      <form onSubmit={handleSubmit} method={"POST"}>
+        <div>
+          <label htmlFor="name"></label>
+          <input id="name" name="name" placeholder="Enter your name" />
+        </div>
+        <div>
+          <label htmlFor="phone"></label>
+          <input id="phone" name="phone" placeholder="Enter your phone" />
+        </div>
+        <div>
+          <label htmlFor="email"></label>
+          <input id="email" name="email" placeholder="Enter your email" />
+        </div>
+        <div>
+          <textarea
+            rows={3}
+            id="message"
+            name="message"
+            placeholder="Please mention your purpose"
+          />
+        </div>
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+      </form>
+      {/* TODO: To BE REMOVED LATER */}
+      {/* <div>
+        {state.succeeded ? (
+          <div className="alert success fadeout">
+            Form Submitted, We'll get in touch with you soon !
+          </div>
+        ) : (
+          <div className="alert error fadeout">Submission Failed !</div>
+        )}
+      </div> */}
     </div>
   );
 };
