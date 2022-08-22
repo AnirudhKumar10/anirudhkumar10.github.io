@@ -5,6 +5,7 @@ export interface IProject {
   time: string;
   descriptions: Array<string>;
   skills: Array<string>;
+  link?: string;
 }
 
 export interface IProjects {
@@ -14,14 +15,14 @@ export interface IProjects {
 export const Project: React.FC<IProjects> = ({ projects }) => {
   return (
     <>
-      {projects.map(({ title, time, descriptions, skills }) => {
+      {projects.map(({ title, time, descriptions, skills, link }) => {
         return (
-          <div className="info-box">
-            <h3>{`${title}`}</h3>
+          <div className="info-box" key={title}>
+            <h3>{link ? <a href={link}>{`${title}`}</a> : `${title}`}</h3>
             <span>{time}</span>
             <ul>
-              {descriptions.map((description) => (
-                <li>{description}</li>
+              {descriptions.map((description, i) => (
+                <li key={description[i]}>{description}</li>
               ))}
             </ul>
             <Skill skills={skills} />

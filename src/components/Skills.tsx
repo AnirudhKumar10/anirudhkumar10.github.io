@@ -7,8 +7,8 @@ export interface ISkills {
 export const Skill: React.FC<ISkills> = ({ skills }) => {
   return (
     <div className="tag-container">
-      {skills.map((skill) => (
-        <Tag>{skill}</Tag>
+      {skills.map((skill, i) => (
+        <Tag key={skills[i]}>{skill}</Tag>
       ))}
     </div>
   );

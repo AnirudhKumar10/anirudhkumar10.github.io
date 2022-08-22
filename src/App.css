@@ -4,6 +4,10 @@
   transition: 0.2s;
 }
 
+.name {
+  text-align: center;
+}
+
 .container {
   padding: 16px;
   display: flex;
@@ -50,18 +54,26 @@
   border-radius: 4px;
 }
 
+.contact > form > div,
 .contact > div {
   padding: 8px;
 }
 
-.contact > div > input {
+.contact > form > div > input {
   width: 80%;
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #c2c2c2;
 }
 
-.contact > button {
+.contact > form > div > textarea {
+  width: 80%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #c2c2c2;
+}
+
+.contact > form > button {
   padding: 8px;
   margin: 8px;
   color: white;
@@ -69,6 +81,45 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.alert {
+  border: 1px solid;
+  border-radius: 4px;
+  width: 80%;
+  padding: 8px;
+}
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeout {
+  -webkit-animation-name: fadeout;
+  animation-name: fadeout;
 }
 
 /* classes for footer */

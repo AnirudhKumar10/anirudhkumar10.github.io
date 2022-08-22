@@ -45,6 +45,7 @@
   "projects": [
     {
       "title": "Chat Pat",
+      "link": "",
       "time": "2021",
       "descriptions": [
         "Chat application which can be send text message and images to other users.",
@@ -54,6 +55,7 @@
     },
     {
       "title": "Dev Portfolio",
+      "link": "https://github.com/AnirudhKumar10/anirudhkumar.github.io",
       "time": "2022",
       "descriptions": [
         "Created React Portifolio generator from JSON with specific, and custom components"

@@ -15,13 +15,13 @@ export const Educations: React.FC<IEducations> = ({ educations }) => {
     <>
       {educations.map(({ institute, time, degree, major, descriptions }) => {
         return (
-          <div className="info-box">
+          <div className="info-box" key={institute}>
             <h3>{institute}</h3>
             <span>{time}</span>
             <p>{`${degree} in ${major}`}</p>
             <ul>
-              {descriptions.map((description) => (
-                <li>{description}</li>
+              {descriptions.map((description, i) => (
+                <li key={description[i]}>{description}</li>
               ))}
             </ul>
           </div>

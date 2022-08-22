@@ -14,12 +14,12 @@ export const Experiences: React.FC<IExperiences> = ({ experiences }) => {
     <>
       {experiences.map(({ title, company, time, descriptions }) => {
         return (
-          <div className="info-box">
+          <div className="info-box" key={title}>
             <h3>{`${title} at ${company}`}</h3>
             <span>{time}</span>
             <ul>
-              {descriptions.map((description) => (
-                <li>{description}</li>
+              {descriptions.map((description, i) => (
+                <li key={description[i]}>{description}</li>
               ))}
             </ul>
           </div>

@@ -10,7 +10,7 @@ export const SideBar: React.FC<ISideBar> = ({ name }) => {
         src={process.env.PUBLIC_URL + "/29033992.jpeg"}
         alt="..."
       ></img>
-      {name && <h2>{name}</h2>}
+      {name && <h2 className="name">{name}</h2>}
       <div className="links">
         <div>
           <a href="#about">About</a>
